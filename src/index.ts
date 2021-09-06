@@ -21,3 +21,5 @@ export { getScopeContext as SECRET_INTERNAL_getScopeContext } from './core/conte
  * It can change without notice. Do not use it in application code.
  */
 export { useMutableSource as SECRET_INTERNAL_useMutableSource } from './core/useMutableSource'
+
+export { getValue, setValue } from './core/exposed';
