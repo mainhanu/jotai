@@ -1,4 +1,4 @@
-import type { Atom, WritableAtom } from 'jotai'
+import type { Atom, WritableAtom } from 'jotai-expose-store'
 
 type ShouldRemove<Param> = (createdAt: number, param: Param) => boolean
 

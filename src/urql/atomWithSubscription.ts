@@ -5,8 +5,8 @@ import type {
   TypedDocumentNode,
 } from '@urql/core'
 import { pipe, subscribe } from 'wonka'
-import { atom } from 'jotai'
-import type { Atom, Getter } from 'jotai'
+import { atom } from 'jotai-expose-store'
+import type { Atom, Getter } from 'jotai-expose-store'
 import { clientAtom } from './clientAtom'
 
 type OperationResultWithData<Data, Variables> = OperationResult<

@@ -1,5 +1,5 @@
-import { atom } from 'jotai'
-import type { PrimitiveAtom, SetStateAction } from 'jotai'
+import { atom } from 'jotai-expose-store'
+import type { PrimitiveAtom, SetStateAction } from 'jotai-expose-store'
 
 type Unsubscribe = () => void
 

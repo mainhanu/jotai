@@ -8,8 +8,8 @@ import type {
   StateMachine,
   Typestate,
 } from 'xstate'
-import { atom } from 'jotai'
-import type { Atom, Getter } from 'jotai'
+import { atom } from 'jotai-expose-store'
+import type { Atom, Getter } from 'jotai-expose-store'
 
 export function atomWithMachine<
   TContext,

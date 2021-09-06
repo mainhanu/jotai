@@ -1,6 +1,6 @@
 import { useCallback, useContext } from 'react'
-import { SECRET_INTERNAL_getScopeContext as getScopeContext } from 'jotai'
-import type { WritableAtom } from 'jotai'
+import { SECRET_INTERNAL_getScopeContext as getScopeContext } from 'jotai-expose-store'
+import type { WritableAtom } from 'jotai-expose-store'
 import type { Scope, SetAtom } from '../core/atom'
 import { WRITE_ATOM } from '../core/store'
 

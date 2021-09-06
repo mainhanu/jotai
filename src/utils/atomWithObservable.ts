@@ -1,5 +1,5 @@
-import { atom } from 'jotai'
-import type { Atom, Getter, WritableAtom } from 'jotai'
+import { atom } from 'jotai-expose-store'
+import type { Atom, Getter, WritableAtom } from 'jotai-expose-store'
 
 declare global {
   interface SymbolConstructor {

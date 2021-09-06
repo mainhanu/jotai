@@ -2,8 +2,8 @@
 import { useCallback } from 'react'
 import { produce } from 'immer'
 import type { Draft } from 'immer'
-import { useAtom } from 'jotai'
-import type { WritableAtom } from 'jotai'
+import { useAtom } from 'jotai-expose-store'
+import type { WritableAtom } from 'jotai-expose-store'
 import type { Scope } from '../core/atom'
 
 export function useImmerAtom<Value>(

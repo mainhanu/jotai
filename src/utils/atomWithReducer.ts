@@ -1,5 +1,5 @@
-import { atom } from 'jotai'
-import type { WritableAtom } from 'jotai'
+import { atom } from 'jotai-expose-store'
+import type { WritableAtom } from 'jotai-expose-store'
 
 export function atomWithReducer<Value, Action>(
   initialValue: Value,

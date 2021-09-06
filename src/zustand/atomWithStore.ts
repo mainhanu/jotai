@@ -1,6 +1,6 @@
 import type { State, StoreApi } from 'zustand/vanilla'
-import { atom } from 'jotai'
-import type { SetStateAction } from 'jotai'
+import { atom } from 'jotai-expose-store'
+import type { SetStateAction } from 'jotai-expose-store'
 
 export function atomWithStore<T extends State>(store: StoreApi<T>) {
   const baseAtom = atom(store.getState())

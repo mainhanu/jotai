@@ -1,7 +1,7 @@
 import { createContext } from 'react'
 import type { Context } from 'react'
 import type { Atom, Scope } from './atom'
-import { GET_VERSION, createStore } from './store'
+import { GET_VERSION, createStore, Store } from './store'
 import { createMutableSource } from './useMutableSource'
 
 const createScopeContainerForProduction = (
@@ -70,9 +70,18 @@ type ScopeContext = Context<ScopeContainer>
 
 const ScopeContextMap = new Map<Scope | undefined, ScopeContext>()
 
+const ScopeContainerMap = new Map<Scope | undefined, ScopeContainer>();
+
 export const getScopeContext = (scope?: Scope) => {
   if (!ScopeContextMap.has(scope)) {
-    ScopeContextMap.set(scope, createContext(createScopeContainer()))
+    ScopeContextMap.set(scope, createContext(getScopeContainer(scope)))
   }
   return ScopeContextMap.get(scope) as ScopeContext
+}
+
+export const getScopeContainer = (scope?: Scope) => {
+  if (!ScopeContainerMap.has(scope)) {
+    ScopeContextMap.set(scope, createScopeContainer())
+  }
+  return ScopeContainerMap.get(scope) as ScopeContainer;
 }

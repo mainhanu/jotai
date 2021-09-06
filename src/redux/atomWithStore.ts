@@ -1,5 +1,5 @@
 import type { Action, AnyAction, Store } from 'redux'
-import { atom } from 'jotai'
+import { atom } from 'jotai-expose-store'
 
 export function atomWithStore<State, A extends Action = AnyAction>(
   store: Store<State, A>

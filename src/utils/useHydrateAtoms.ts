@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { SECRET_INTERNAL_getScopeContext as getScopeContext } from 'jotai'
+import { SECRET_INTERNAL_getScopeContext as getScopeContext } from 'jotai-expose-store'
 import type { Atom, Scope } from '../core/atom'
 import type { ScopeContainer } from '../core/contexts'
 import { RESTORE_ATOMS } from '../core/store'

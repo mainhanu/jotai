@@ -1,5 +1,5 @@
-import { atom } from 'jotai'
-import type { SetStateAction, WritableAtom } from 'jotai'
+import { atom } from 'jotai-expose-store'
+import type { SetStateAction, WritableAtom } from 'jotai-expose-store'
 import { RESET } from './constants'
 
 export function atomWithReset<Value>(initialValue: Value) {

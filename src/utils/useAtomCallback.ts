@@ -1,6 +1,6 @@
 import { useCallback, useMemo } from 'react'
-import { atom } from 'jotai'
-import type { Setter, WritableAtom } from 'jotai'
+import { atom } from 'jotai-expose-store'
+import type { Setter, WritableAtom } from 'jotai-expose-store'
 import type { Scope } from '../core/atom'
 // NOTE importing non-core functions is generally not allowed. this is an exception.
 import { useUpdateAtom } from './useUpdateAtom'

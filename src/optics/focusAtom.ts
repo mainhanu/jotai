@@ -1,6 +1,6 @@
 import * as O from 'optics-ts'
-import { atom } from 'jotai'
-import type { SetStateAction, WritableAtom } from 'jotai'
+import { atom } from 'jotai-expose-store'
+import type { SetStateAction, WritableAtom } from 'jotai-expose-store'
 import { getWeakCacheItem, setWeakCacheItem } from '../utils/weakCache'
 import type { WeakCache } from '../utils/weakCache'
 

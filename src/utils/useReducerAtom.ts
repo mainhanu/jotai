@@ -1,6 +1,6 @@
 import { useCallback } from 'react'
-import { useAtom } from 'jotai'
-import type { PrimitiveAtom } from 'jotai'
+import { useAtom } from 'jotai-expose-store'
+import type { PrimitiveAtom } from 'jotai-expose-store'
 import type { Scope } from '../core/atom'
 
 /* this doesn't seem to work as expected in TS4.1

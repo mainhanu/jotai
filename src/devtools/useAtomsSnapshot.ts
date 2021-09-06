@@ -2,7 +2,7 @@ import { useCallback, useContext } from 'react'
 import {
   SECRET_INTERNAL_getScopeContext as getScopeContext,
   SECRET_INTERNAL_useMutableSource as useMutableSource,
-} from 'jotai'
+} from 'jotai-expose-store'
 import type { Atom, Scope } from '../core/atom'
 // NOTE importing from '../core/contexts' is across bundles and actually copying code
 import { isDevScopeContainer } from '../core/contexts'

@@ -5,8 +5,8 @@ import type {
   QueryObserverOptions,
   QueryObserverResult,
 } from 'react-query'
-import { atom } from 'jotai'
-import type { PrimitiveAtom, WritableAtom } from 'jotai'
+import { atom } from 'jotai-expose-store'
+import type { PrimitiveAtom, WritableAtom } from 'jotai-expose-store'
 import { queryClientAtom } from './queryClientAtom'
 import type { CreateQueryOptions, GetQueryClient } from './types'
 

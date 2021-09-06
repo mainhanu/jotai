@@ -1,4 +1,4 @@
-import { atom } from 'jotai'
+import { atom } from 'jotai-expose-store'
 import type {
   Atom,
   Getter,
@@ -6,7 +6,7 @@ import type {
   SetStateAction,
   Setter,
   WritableAtom,
-} from 'jotai'
+} from 'jotai-expose-store'
 import { getWeakCacheItem, setWeakCacheItem } from './weakCache'
 
 const splitAtomCache = new WeakMap()

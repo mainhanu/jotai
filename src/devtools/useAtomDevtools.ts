@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
-import { useAtom } from 'jotai'
-import type { WritableAtom } from 'jotai'
+import { useAtom } from 'jotai-expose-store'
+import type { WritableAtom } from 'jotai-expose-store'
 import type { Scope } from '../core/atom'
 
 type Config = {

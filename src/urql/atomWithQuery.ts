@@ -6,8 +6,8 @@ import type {
   TypedDocumentNode,
 } from '@urql/core'
 import { pipe, subscribe } from 'wonka'
-import { atom } from 'jotai'
-import type { Getter, PrimitiveAtom, WritableAtom } from 'jotai'
+import { atom } from 'jotai-expose-store'
+import type { Getter, PrimitiveAtom, WritableAtom } from 'jotai-expose-store'
 import { clientAtom } from './clientAtom'
 
 type AtomWithQueryAction = {

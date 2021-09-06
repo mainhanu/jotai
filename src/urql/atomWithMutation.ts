@@ -4,8 +4,8 @@ import type {
   OperationResult,
   TypedDocumentNode,
 } from '@urql/core'
-import { atom } from 'jotai'
-import type { Getter } from 'jotai'
+import { atom } from 'jotai-expose-store'
+import type { Getter } from 'jotai-expose-store'
 import { clientAtom } from './clientAtom'
 
 type MutationAction<Data, Variables extends object> = {
